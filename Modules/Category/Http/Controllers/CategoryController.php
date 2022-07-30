@@ -15,8 +15,8 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $data['categories'] = DB::table('categories')->get();
-        return view('category::index', $data);
+        $data['results'] = DB::table('categories')->get();
+        return view('frontend.modules.category.index', $data);
     }
 
     /**

@@ -1,12 +1,11 @@
 <?php
 
 namespace Modules\Category\Database\Seeders;
-
-
+use App\Models\Category;
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-class CategoryDatabaseSeeder extends Seeder
+class CategorySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,8 +15,7 @@ class CategoryDatabaseSeeder extends Seeder
     public function run()
     {
         Model::unguard();
-
-        $categoryRecord = [
+        $data = [
             [
 
                 'title' => 'Commercial Bank',
@@ -36,6 +34,6 @@ class CategoryDatabaseSeeder extends Seeder
                 'status' => 1
             ]
         ];
-        Category::insert($categoryRecord);
+        Category::insert($data);
     }
 }

@@ -15,19 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/users', function () {
-    // when using eloquent
-    $dataSet =  DB::table('users')->select(['id','name'])->take(50000)->get();
-    
-    //$dataSet =  User::select(['id','name','email'])->take(20000)->get();
-    // when using query builder
-    // $users = DB::table('users')->chunk(100, function ($users) {
-    //     foreach ($users as $post) {
-    //         // Process users
-    //     }
-    // });
-    return view('users', compact('dataSet'));
-});
+// Route::get('/', function () {
+//     return view('frontend.modules.category.welcome');
+// });
+

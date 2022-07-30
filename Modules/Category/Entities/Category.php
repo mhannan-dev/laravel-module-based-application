@@ -15,3 +15,4 @@ class Category extends Model
         $this->attributes['slug'] = Str::slug($value);
     }
 }
+
