@@ -1,4 +1,6 @@
 {
     "Category": true,
-    "Auth": true
+    "Auth": true,
+    "Blog": true,
+    "Comment": true
 }
